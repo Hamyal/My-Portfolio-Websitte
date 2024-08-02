@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="s.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI Engineer</p>
+                <h1>Hi, I am <span>Hamyal</span> from Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpeg">
+                    <!-- Add content here if needed -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Currently pursuing a Bachelor's degree in Artificial Intelligence at FAST University,
+                        I have developed a strong foundation in C++, Python, and data structures,
+                        complemented by hands-on experience in machine learning. Driven by a passion
+                        for addressing real-world challenges, I am focused on applying theoretical knowledge
+                        to practical solutions. Explore the portfolio to see how these skills are translated into innovative projects.
+                        I am also keen to engage in collaborative opportunities and welcome discussions on how
+                        we can work together to tackle complex problems and drive technological advancements.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Assembly Language</li>
+                            <li><span>C++</span><br>HTML/CSS</li>
+                            <li><span>Python</span><br>Artificial Intelligence</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Data Structure</span><br>GitHub Simulation</li>
+                            <li><span>C++</span><br>Shooter Game</li>
+                            <li><span>Python</span><br>Data Visualization and Data Scraping</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026 (Current)</span><br>BSAI at FAST University</li>
+                            <li><span>2020-2022</span><br>Punjab Group of Colleges Gujranwala</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-python"></i>
+                    <h2>Python</h2>
+                    <p class="short-desc">Leveraging Python's powerful capabilities...</p>
+                    <p class="full-desc" style="display:none;">Leveraging Python's powerful capabilities, I excel in crafting scalable and innovative software solutions. From developing complex algorithms and data analytics tools to creating seamless integrations and automating repetitive tasks, my expertise in Python ensures that I can tackle a wide range of programming challenges.</p>
+                    <a href="#" class="learn-more" data-service="python">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-cogs"></i>
+                    <h2>Machine Learning</h2>
+                    <p class="short-desc">I am passionate about harnessing the power of machine learning...</p>
+                    <p class="full-desc" style="display:none;">I am passionate about harnessing the power of machine learning to drive data-driven decisions and innovations. From developing predictive models and classification systems to implementing advanced algorithms, I use my skills in machine learning to provide actionable insights and solve complex problems.</p>
+                    <a href="#" class="learn-more" data-service="ml">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p class="short-desc">I offer comprehensive web design services that blend creativity with functionality...</p>
+                    <p class="full-desc" style="display:none;">I offer comprehensive web design services that blend creativity with functionality. By utilizing modern design principles and responsive design techniques, I create visually appealing and user-friendly websites.</p>
+                    <a href="#" class="learn-more" data-service="web-design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-robot"></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p class="short-desc">With a strong background in artificial intelligence...</p>
+                    <p class="full-desc" style="display:none;">With a strong background in artificial intelligence, I specialize in developing AI solutions that are both innovative and effective. From natural language processing to computer vision, my AI services are designed to meet the unique needs of each project.</p>
+                    <a href="#" class="learn-more" data-service="ai">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <!-- Add portfolio content here -->
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+    <div id="contact">
+        <div class="contact-content">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope" style="font-size:48px;color:rgb(31, 17, 105)"></i> hamyal20h@gmail.com</p>
+                <p><i class="fas fa-phone" style="font-size:48px;color:rgb(25, 0, 255)"></i><br>03256914998</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/hamyal-923931302" target="_blank"><i class="fab fa-linkedin" style="font-size:48px;color:blue"></i></a>
+                    <a href="https://github.com/Hamyal" target="_blank"><i class="fab fa-github" style="font-size:48px;color:blue"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter" style="font-size:48px;color:blue"></i></a>
+                </div>
+                <a href="implfiles/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; Hamyal</p>
+    </div>
+
+    <script>
+        function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            document.querySelector(`.tab-links[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+       
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            var navMenu = document.querySelector('nav ul');
+            navMenu.style.display = (navMenu.style.display === 'flex') ? 'none' : 'flex';
+        });
+
+     
+        document.querySelectorAll('.learn-more').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var serviceBox = this.closest('div');
+                var shortDesc = serviceBox.querySelector('.short-desc');
+                var fullDesc = serviceBox.querySelector('.full-desc');
+                
+                if (fullDesc.style.display === 'none') {
+                    shortDesc.style.display = 'none';
+                    fullDesc.style.display = 'block';
+                    this.textContent = 'Show less';
+                } else {
+                    shortDesc.style.display = 'block';
+                    fullDesc.style.display = 'none';
+                    this.textContent = 'Learn more';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
